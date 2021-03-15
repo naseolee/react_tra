@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
+
+body {
+    margin-left: 15%;
+    align-content: center;    
+    background-color: #C3D5E9;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.movie{
+    width:40%;
+    height:50%;
+    display:inline-block;
+    background-color:wheat;
+    margin:10px;
+    
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.movie > img{
+    float:left;
+    margin-top: -2%;
+    width: 20%; 
+    height:20%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.movie_summmary, .genres__genre, .movie__year{
+    font-size: 5%;
+}
+.movie__title{
+    font-size: 11px;
+    margin-bottom: -1%;
 }
 
-.App-link {
-  color: #61dafb;
+.movie_summmary{
+    width: 90%;
+    height: 80px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    clear:both;
+    border: rgb(52, 218, 230) 3px dotted ;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.genre{
+    margin-top: -1%;
+    margin-bottom: 1%;
+    height: 30px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
 }
+
+::-webkit-scrollbar { display: none; }
+
+@media screen and (max-width: 768px) { 
+
+body {
+    margin-left: 8%;
+    align-content: center;    
+    background-color: #C3D5E9;
+}
+
+.movie{
+    width:90%;
+    height:70%;
+    display:inline-block;
+    background-color:wheat;
+    margin:10px;
+    
+}
+
+.movie > img{
+    float:left;
+    margin-top: -2%;
+    width: 50%; 
+    height:50%;
+}
+
+.movie_summmary, .genres__genre, .movie__year{
+    font-size: 13px;
+}
+.movie__title{
+    font-size: 15px;
+    margin-bottom: -1%;
+}
+
+.movie_summmary{
+    width: 90%;
+    height: 100px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    clear:both;
+    border: rgb(52, 218, 230) 3px dotted ;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.genre{
+    margin-top: -1%;
+    margin-bottom: 1%;
+}
+ }
+
+
+
+
+
